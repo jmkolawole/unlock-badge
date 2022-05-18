@@ -10,15 +10,18 @@ class CommentWritten
 {
     use Dispatchable, SerializesModels;
 
-    public $comment;
+    public $achievement_name;
+    public $user;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Comment $comment)
+    public function __construct($achievement_name, $user)
     {
-        $this->comment = $comment;
+        $this->achievement_name = $achievement_name;
+        $this->user = $user;
+
     }
 }

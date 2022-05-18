@@ -11,7 +11,7 @@ class LessonWatched
 {
     use Dispatchable, SerializesModels;
 
-    public $lesson;
+    public $achievement_name;
     public $user;
 
     /**
@@ -19,9 +19,10 @@ class LessonWatched
      *
      * @return void
      */
-    public function __construct(Lesson $lesson, User $user)
-    {
-        $this->lesson = $lesson;
+    public function __construct($achievement_name, $user)
+    {   
+        $this->achievement_name = $achievement_name;
         $this->user = $user;
+
     }
 }
