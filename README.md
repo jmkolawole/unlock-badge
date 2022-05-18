@@ -47,7 +47,7 @@ php artisan key:generate
 php artisan migrate --database=mysql --seed
 ```
 
-Cheers! You have successfully setup Hr-app  on your local machine.
+Cheers! You have successfully setup the application  on your local machine.
 :+1: :+1: :+1:
 
 ## :package: Built With
