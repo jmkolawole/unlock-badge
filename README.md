@@ -57,5 +57,5 @@ Cheers! You have successfully setup Hr-app  on your local machine.
 
 ## :handshake: Developer
 Unlock-badge
-- JIMOH Mofoluwasho Kolawole (jmkolawole@gmail.com_) - Developer
+- JIMOH Mofoluwasho Kolawole (jmkolawole@gmail.com) - Developer
 

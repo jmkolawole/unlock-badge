@@ -31,7 +31,7 @@ class AchievementsController extends Controller
        // $this->unlockCommentAchievements($user);
        // $this->unlockBadges($user);
 
-        
+       //These can be commented out and placed at the needed places in the application 
        $this->unlockCommentAchievements($user);
        $this->unlockLessonAchievements($user);
        $this->unlockBadges($user);
