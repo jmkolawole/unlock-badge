@@ -20,7 +20,7 @@ class AchievementsController extends Controller
     {
     
         $user = User::whereId($request->route('id'))->first();
-        
+        //Use either user 2 or 3 for better result / testing
        
         /**
          *  These functions unlocks achievements (for comments and lessons) and badges respectively.
@@ -37,7 +37,7 @@ class AchievementsController extends Controller
        $this->unlockBadges($user);
      
        
-       
+
        //1. Unlocked achievements
        $unlocked_achievements = Achievement::whereUserId($user->id)->get()->pluck('achievement')->toArray();
         
