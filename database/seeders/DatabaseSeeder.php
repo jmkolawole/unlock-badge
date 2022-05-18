@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Comment;
-use App\Models\CommentAchievement;
 use App\Models\Lesson;
 use Illuminate\Database\Seeder;
 use App\Models\User;
@@ -19,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         /* $lessons = Lesson::factory()
             ->count(20)
-            ->create(); *//* 
+            ->create(); */            
 
         Lesson::factory()->count(20)->create();
 
@@ -43,9 +42,9 @@ class DatabaseSeeder extends Seeder
         //Seed all achievements
         $this->call(CommentAchievementSeeder::class);
         $this->call(LessonAchievementSeeder::class);
- */
-
-       // $this->call(BadgeTableSeeder::class);
+ 
+       //seed badges
+       $this->call(BadgeTableSeeder::class);
        $this->call(AchievementSeeder::class);
           
     }

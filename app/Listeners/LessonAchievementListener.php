@@ -27,12 +27,13 @@ class LessonAchievementListener
      */
     public function handle(LessonWatched $event)
     {
-     
+
         //
-      return Achievement::create([
-          'user_id' => $event->user->id,
-          'achievement' => $event->achievement_name,
-          'source' => 'lesson'
+        return Achievement::firstOrCreate([
+            'user_id' => $event->user->id,
+            'achievement' => $event->achievement_name,
+        ], [
+            'source' => 'lesson'
         ]);
     }
 }

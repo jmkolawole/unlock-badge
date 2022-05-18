@@ -28,10 +28,13 @@ class CommentAchievementListener
     public function handle(CommentWritten $event)
     {
         //
-        return Achievement::create([
+        
+        return Achievement::firstOrCreate([
             'user_id' => $event->user->id,
             'achievement' => $event->achievement_name,
+        ], [
             'source' => 'comment'
-          ]);
+        ]);
+          
     }
 }
