@@ -45,7 +45,8 @@ class DatabaseSeeder extends Seeder
         $this->call(LessonAchievementSeeder::class);
  */
 
-        $this->call(BadgeTableSeeder::class);
-
+       // $this->call(BadgeTableSeeder::class);
+       $this->call(AchievementSeeder::class);
+          
     }
 }
